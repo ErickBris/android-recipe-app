@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Android Recipe App Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Android Recipe App&rdquo; Documentation by &ldquo;dmb TEAM&rdquo; v2.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo; Android Recipe App &rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 01.06.2014<br>
+					Updated: 21.12.2015<br>
+					By: dmb TEAM<br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<p class="prepend-top append-0">Thank you for purchasing our android application. If you have any questions that are beyond the scope of this help file, please feel free to email us via the Contact Form <a target="_blank" href="http://codecanyon.net/user/dmbTeam">here</a>. Be sure not to contact us via email, if you already posted a comment or vice versa. Posting duplicate requests won't speed up, but will slow down the process of getting reply.</p>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+        
+        <div style="background-color: #ffd0d0; padding: 10px; margin-bottom: 20px;">
+			<h2>Important</h2>
+
+				<strong>What stays behind Support:</strong>
+				<ul>
+					<li>Responding to questions or problems regarding the item and its features</li>
+					<li>Fixing bugs and reported issues</li>
+				</ul>
+				<strong>What is OUT of the Support scope:</strong>
+				<ul>
+					<li>Customization and installation services</li>
+					<li>Support for third party software and plug-ins</li>
+				</ul>
+
+		</div>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+        <h3>I. How to configure/set up the project?</h3>
+		<ol>
+            <li><a href="#tools">What tools you need?</a></li>            
+			<li><a href="#import">Import the project into Android Studio</a></li>
+		</ol>
+		<h3>II. How to Customize "Android Recipe App"?</h3>
+		<ol>
+			<li><a href="#recipes">Add/Remove Recipes</a></li>
+			<li><a href="#remote">Local or Remote (web hosted) XML?</a></li>
+			<li><a href="#splash">Splash Screen</a></li>
+			<li><a href="#admob">Admob</a></li>
+			<li><a href="#more">Other settings</a></li>
+			<li><a href="#aboutPage">About Page setup</a></li>
+			<li><a href="#tutorials">Useful tutorials</a></li>
+		</ol>
+		
+		<hr />
+		
+		<h3>I. How to configure/set up the project?</h3>
+        <h3 id="tools"><strong>1. What tools you need?</strong> - <a href="#toc">top</a></h3>
+        <p>The product is created within Android Studio IDE. You can download it from here: <a href="http://developer.android.com/sdk/index.html" target="_blank">Download Android Studio.</a>. In addition, on this page you can find useful information how the IDE is working, features, system requirements, tutorials and so on.
+		</p>
+        
+        <hr />
+        
+        <h3 id="import"><strong>2. Import the project into Android Studio</strong> - <a href="#toc">top</a></h3>
+        <p><strong>Step 1:</strong> Extract the content from the .zip file that you've just downloaded from CodeCanyon. Then start <strong>Android Studio</strong> and when you see the <strong>Welcome to Android Studio screen</strong> click on <strong>Open an existing Android Studio project</strong>
+		</p>
+        <p><img src="assets/images/import-1.jpg"></p>
+        <p><strong>Step 2:</strong> After that you will get a pop-up and you should locate where you extracted the .zip file. Select the root directory:</p>
+        <p><img src="assets/images/import-2.png"></p>
+        <p><strong>Step 3:</strong> When you click the OK button, you will see another pop-up (if you have already used Android Studio, this dialog won't show up), where you should check the <strong>Use local gradle distribution</strong> option. And here you should locate where is your local Gradle distribution. Of course you should download it first from <a href="https://www.gradle.org/downloads" target="_blank">here</a>. When you are ready, click Ok</p>
+        <p><img src="assets/images/import-3.jpg"></p>
+        <p><strong>Step 4:</strong> After <strong>Step 4</strong>, you will see the 1st screen below. Just click on the <strong>Project</strong> and you will see the project's structure (2nd screen below):</p>
+        <p><img width="800" src="assets/images/import-4.jpg"></p>
+        <p><img width="800" src="assets/images/import-5.png"></p>
+        <p><strong>Step 5:</strong> We can perform quick test, if everything is ok by selecting the <strong>app</strong> folder on the left and clicking the green <strong>Run</strong> button. This way we will launch the app on a Emulator or real device, if you have connected it to your machine. Currently we don't have real device connected (as we can see from the dialog), so we will run it on a <strong>Emulator Nexus 5 API 21 x86</strong>.
+		</p>
+        <p>
+			<img width="800" src="assets/images/import-6.png">
+		</p>
+        <p>That's it. You are ready to continue with the customization.</p>
+		
+        <hr />	
+		
+		
+		<h3>III. How to Customize "Android Recipe App" ?</h3>
+		<h3 id="recipes"><strong>1. Add/Remove Recipes</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To add <strong>Recipes</strong> in your own application, you just need to open the <strong>app/assets/recipe_settings.xml</strong> file and to edit it:</p>
+        <p><img width="800" src="assets/images/xml-location.png" /></p>
+        <p><strong>Description of the XML file:</strong></p>
+        <p>
+			<strong>Elements meaning:</strong><br/>
+			<em>Element 'LogoActive'</em> - name of the image to be displayed as active logo in the left menu<br/>
+			<em>Element 'LogoInactive'</em> - name of the image to be displayed as active logo in the left menu<br/>
+			<br/>
+			<em>Element 'Category'</em><br/>
+			<em>- attribute 'name'</em> - name of the Category<br/>
+			<em>- attribute 'icon'</em> - icon of the Category<br/>
+			<br/>
+			<em>Sub-Element 'RecipeInfo'</em> - represents a single recipe and the info about it<br/>
+			<br/>
+			<em>Sub-Element 'RecipeTitle'</em> - put the name of the meal here<br/>
+			<em>Sub-Element 'RecipePictureList'</em> - array containing all pictures<br/>
+            <em>-- Sub-Element 'RecipePicture'</em> - put the picture of the meal here. You can have several pictures per recipe.<br/>
+			<br/>
+			<em>Sub-Element 'RecipeSummary'</em> - summary of the recipe; contains the following:<br/>
+			<em>-- Sub-Element 'RecipeSummaryOrigin'</em> - origin of the recipe<br/>
+			<em>-- Sub-Element 'RecipeSummaryPreparationTime'</em> - preparation time of the meal<br/>
+			<em>-- Sub-Element 'RecipeSummaryCookingTime'</em> - cooking time of the meal<br/>
+			<em>-- Sub-Element 'RecipeSummaryPortions'</em> - portions of the meal<br/>
+			<em>-- Sub-Element 'RecipeSummaryCalories'</em> - calories of the meal<br/>
+			<em>-- Sub-Element 'RecipeSummaryDescription'</em> - description of the meal<br/>
+			<br/>
+			<em>Sub-element 'RecipeIngredientsList'</em> - list of recipe ingredients<br/>
+			<em>-- Sub-Element 'RecipeIngredient'</em> - represents a recipe ingredient<br/>
+			<em>-- -- Sub-Element 'RecipeIngredientsName'</em> - name of the ingredient<br/>
+			<em>-- -- Sub-Element 'RecipeIngredientsQuantity'</em> - quantity of the ingredient<br/>
+			<br/>
+			<em>Sub-element 'RecipeStepsList'</em> - list of recipe steps<br/>
+			<em>-- Sub-Element 'RecipeStep'</em> - represents a step to make the recipe<br/>
+			<em>-- -- Sub-Element 'RecipeStepName'</em> - name of the recipe step<br/>
+			<em>-- -- Sub-Element 'RecipeStepDescription'</em> - description of the recipe step<br/>
+			<br/>
+		</p>
+        
+        <p>You have to give you some time to explore the demo XML file in order to understand how to build your own recipes. Basically, it's simply organized in two main sections: <strong>MainSettings</strong> and <strong>Category</strong>. Each <strong>Category</strong> can contain several recipes.</p>
+		
+        <hr />
+        
+        <h3 id="remote"><strong>2. Local or Remote (web hosted) XML?</strong> - <a href="#toc">top</a></h3>
+        <p>By default the app will use the local XML file located within the <strong>assets</strong> folder. This means that your app won't need internet connection in order to display the already added recipes. The main advantage of this is that everything will be loaded very fast. The main drawback is that, when you want to add/remove recipes, you have to release new version of the product. We recommend to use local XML file, when you won't perform often changes to the recipes.</p>
+        <p>If you plan to make regular and often changes to the recipes, it's better to use Remote (web hosted) XML file. You just need to take the one from <strong>assets</strong> folder and to upload it to your web host. Then you have to set up the app to use that Remote XML. To do so, open the <strong>RecipesXMLTagConstants.java</strong> file (class) and look for the <strong>TAG_URL_SETTINGS</strong> definition. By default it has no value, which means that the Local XML will be used. So, you have to change its value with the URL to the web hosted XML, like in the example below, where <strong>http://yourdomain.com/recipes_settings.xml</strong> is the URL to the uplaoded XML:</p>
+        <p><img width="800" src="assets/images/remote-xml.png" /> </p>
+        <p>Choosing to use the Remote (web hosted) XML leads to the following: (1) The user will need internet connection in order to load the recipes, (2) There is no need to upload new version of the product, when you add/remove recipes to the Remote XML - they will be automatically loaded, (3) The recipes won't be loaded as fast as when using the Local XML.</p>
+        
+        <hr />
+        
+		<h3 id="splash"><strong>3. Splash Screen</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To customize the <strong>Splash Screen</strong> do the following:</p>
+		<ol>
+			<li>Replace the <i>splash.png</i> file in folders <i>drawable, drawable-xhdpi, drawable-hdpi, drawable-mdpi and drawable-ldpi</i> with your own splash image.</li>
+		</ol>
+        
+        <hr />
+		
+		<h3 id="admob"><strong>4. Admob</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To turn on <strong>Admob</strong> open the AppConstants.java file, which you can find here:<br/><br/>
+			<img width="800" src="assets/images/enable-admob.png">
+		</p>
+		<ol>
+			<li>If you want to have ads in your home screen (the screen with the slider) you need to set the flag <i>ENABLE_ADMOB_HOME_PAGE</i> in class <i>AppConstants.java</i> to true.</li>
+			<li>If you want to have ads in your single joke screen (the screen that is displayed after you click some item from home screen) you need to set the flag <i>ENABLE_ADMOB_SINGLE_NEW</i> in class <i>AppConstants.java</i> to true.</li>
+			<li>Set the <i>ADMOB_REFRESH_INTERVAL</i> value in class <i>AppConstants.java</i> with the number of seconds to refresh the advertisements.</li>
+			<li>Set the <i>admob_id</i> string property with your own admob id. You have to do that editing the <strong>strings.xml</strong> file within the <strong>res/values/</strong> folder. This is very important and without setting it you will never see ads in your application.</li>
+		</ol>
+        <p><img width="800" src="assets/images/admob_id.png" /></p>
+        
+        <hr />
+        
+		<h3 id="more"><strong>5. Other settings</strong> - <a href="#toc">top</a></h3>		
+		<p>There are some less important but useful settings in <strong>AppConstants.java</strong> file. Their usage is described in the file.</p>
+		
+        <hr />
+        
+		<h3 id="aboutPage"><strong>6. About Page Setup</strong> - <a href="#toc">top</a></h3>
+		<p>
+			<strong>a)</strong> To setup the content of the About Page, open the <strong>AppConstants.java</strong> file and scroll down to find the following declarations: <br>
+			<img width="800" src="assets/images/about.png"> <br> <br>
+			Just change the values between the double quotes (i.e. "Android Recipe App") and you are done.
+			<br> <br>
+			<strong>b)</strong> If you want to change the label "About Page" that is displayed in the Left Sliding Menu, open the <strong>MainActiviy.java</strong> and find the following declaration: <br><br>
+			<img src="assets/images/about-page-label.png"> <br> <br>
+			Just change the values between the double quotes (i.e. "About Page") and you are done.
+
+		</p>
+        
+        <hr />
+
+		<h3 id="tutorials"><strong>7. Useful tutorials</strong> - <a href="#toc">top</a></h3>
+        <p>
+			<strong>7.1.</strong> <a href="http://stackoverflow.com/questions/16804093/android-studio-rename-package/29092698#29092698" target="_blank">How can I change the package name?</a> - you need to do it, before uploading the app to Google Play Store.
+			<br>
+			<strong>7.2.</strong> <a href="http://developer.android.com/tools/publishing/app-signing.html" target="_blank">How to export certified apk file for Google Play Store (Official Documentation)</a> or <a href="https://www.udacity.com/wiki/ud853/course_resources/creating-a-signed-apk">Stackoverflow thread</a>
+			<br>
+			<strong>7.3.</strong> <a href="http://developer.android.com/distribute/tools/launch-checklist.html" target="_blank">Launch Checklist for Google Play Store</a>
+			<br>
+			<strong>7.4.</strong> <a href="http://developer.android.com/tools/publishing/publishing_overview.html" target="_blank">Publishing Android Application (Official Documentation).</a>
+
+		</p>
+
+		<hr>
+		
+		<p class="append-bottom alt large"><strong>"Android Recipe App" by dmb TEAM</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space" />
+	</div><!-- end div .container -->
+</body>
+</html>
